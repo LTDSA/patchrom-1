@@ -1,7 +1,7 @@
 Patchrom
 ===========
 
-Get Android SDK
+获取Android SDK
 ----------------
 
 In order to build patchrom project, you must have android sdk installed.(http://developer.android.com/sdk/installing.html)
@@ -12,13 +12,13 @@ vim .bashrc
 
 export PATH=$PATH:/home/xxx/android-sdk/tools:/home/xxx/anroid-sdk/platform-tools
 
-Getting Started
+入门
 ---------------
 
 To get started with MiCode/patchrom, you'll need to get
 familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
-To initialize your local repository using the patchrom trees, use a command like this:
+要初始化您的本地存储库using the patchrom trees，使用一个像这样的命令：
 
     mkdir patchrom
 
@@ -30,34 +30,34 @@ Then to sync up:
 
     repo sync
 
-Build
+建立
 --------
 
-Assumed current directory is patchtom and you want to build the ROM for Nexus6P
+Assumed current目录是patchrom且您想建立ROM给Nexus6P
 
 
      . build/envsetup.sh
      cd angler
      make fullota
 
-After build completed, there will be a fullota.zip under out directory, now you can flash this file into your device.
+建立完成以后，there will be a fullota.zip under out directory, now you can flash this file into your device.
 
 
-Porting new device
+适配新设备
 ------------------
 
-Asssumed current directory is patchrom and you want to port miui to a new android device xblade
+Asssumed current目录是patchrom且您想适配miui到一个新的android设备xblade
 
-Prerequiste:
-(1) Your device has root privilege or a rooted kernel(preferred)
+前提：
+(1) 您的设备has root privilege or a rooted kernel(preferred)
 
-(2) Your device can flash ZIP from recovery(twrp recovery is preferred)
+(2) 您的设备能够从recovery刷入ZIP（twrp recovery优先）
 
 Workflow:
 
-(1) connect your device to PC, ensure adb works
+(1) 连接您的设备到PC, ensure adb works
 
-(2) run the following commands
+(2) 运行以下命令
 
      . build/envsetup.sh
 
@@ -77,5 +77,5 @@ Workflow:
 
      make fullota
 
-Now you can get your own miui ROM, enjoy it!
+现在您可以得到您自己说miui ROM，尽情享受吧！
 
